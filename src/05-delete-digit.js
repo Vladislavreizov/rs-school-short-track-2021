@@ -14,7 +14,7 @@ function deleteDigit(n) {
   const num = n.toString().split('');
   const min = Math.min(...num).toString();
   const minIndex = num.indexOf(min);
-  return num.filter((i, e) => e !=== minIndex).join('');
+  return Number(num.filter((i, e) => e !== minIndex).join(''));
 }
 
 module.exports = deleteDigit;
